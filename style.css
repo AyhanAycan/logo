@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300;1,400&display=swap');
+
+* {margin:0;
+   padding:0;
+   box-sizing:border-box;}
+body {background-image: url(bg.jpg);
+      font-family:'Poppins', sans-serif;
+      background-size: cover;}
+
+.container {width: 80%;margin:auto}
+header{height: 100px;
+       border-bottom: 2px solid rgba(255,255,255, 0.06)}
+
+/* header start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo a{color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;}
+ul{list-style: none;
+   display: flex;
+   column-gap: 30px;}
+nav ul li a{color:white;
+    text-decoration: none;
+    transition: color .25 s ease ;
+}
+nav ul li a:hover{color: #000000   }
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+.menu-button{
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.2);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25 ease;
+}
+.menu-button:hover{
+    color: white;
+    background-color: #0ba2c0 
+}
+.content{color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+h1 {   font-size: 60px;
+       text-align: center;}
+p {    font-size: 24px;
+       text-align: center;
+       margin-top: 32px;
+    }
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+.links a{
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+  
+}
+.links a:hover{
+    background-color: #0ba2c0;
+    color: white;
+}
+
+
+
+
+
+
+/* responsive start */
+@media(max-width: 576px) {
+
+.container {
+    width: 100%;
+padding-left:12px;
+padding-right:12px}
+.menu ul{
+    column-gap: 20px;
+}
+.menu-button {
+    display: none;
+}
+.content {
+    padding-top: 50px;
+}
+h1{ font-size: 36px;}
+
+p{
+    font-size: 36px;
+}
+
+.links {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;}
+
+.links a{
+    padding: 14px;
+    width: 90%;
+}
+}
